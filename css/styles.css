@@ -186,8 +186,7 @@ border-radius: 2px;
     font-size: 16px;
     line-height: 1.5;
 
-    transition: color var(--transition);
-      
+    transition: color var(--transition); 
 }
 
 .address {
@@ -222,7 +221,6 @@ border-radius: 2px;
 
 .footer-flex{
     display: flex;
-    gap: 120px;
     justify-content: flex-start;
 }
 .footer {
@@ -231,22 +229,31 @@ border-radius: 2px;
     background-color: var(--footer-bcg-color);
 }
 
+.footer-texr-wrapp{
+    margin-right: 120px;
+}
+
 .footer-text {
     width: 264px;
     color: #F4F4FD;
 }
-
-
 
 .footer .logo{
     display: inline-block;
     margin-bottom: 16px;
 }
 
-.social-media-title{
+.social-media-title, .footer-form-title{
     font-weight: 500;
     color: #FFFFFF;
     margin-bottom: 16px;
+}
+/* .social-media{
+    margin-right: 80px;
+} */
+
+.footer-form-wrapp{
+    margin-left: auto;
 }
 
 .social-media .soc-list {
@@ -263,6 +270,51 @@ border-radius: 2px;
 .social-media .soc-list-item .link:hover,
 .social-media .soc-list-item .link:focus {
     background-color: #31D0AA;
+}
+
+.footer-input-email{
+    width: 264px ;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    background-color: transparent;
+
+    padding: 8px 16px;
+}
+
+.footer-input-email::placeholder{
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.btn-subscibe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 16px;
+    width: 165px;
+    height: 40px;
+    
+    color: #FFFFFF;
+
+    background: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+
+}
+
+.footer-subscribe-wrapp{
+    display: flex;
+    gap: 24px;
+}
+
+.icon-subscribe{
+    fill: currentColor;
 }
 
 
@@ -645,7 +697,7 @@ border-radius: 2px;
   
     width: 408px;
     min-height: 576px;
-    padding: 20px;
+    padding: 72px 24px 24px;
     transition: transform var(--transition);
 
     background: #FCFCFC;
@@ -653,10 +705,7 @@ border-radius: 2px;
     0px 1px 3px rgba(0, 0, 0, 0.12), 
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-
 }
-
-
 
 .close-icon {
     fill:currentColor;
@@ -667,10 +716,12 @@ border-radius: 2px;
     justify-content: center;
     align-items: center;
     margin-left: auto;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 
     transition: background-color var(--transition) , 
     color var(--transition);
-
 
     color: #2E2F42 ;
     background: #E7E9FC;
@@ -678,7 +729,6 @@ border-radius: 2px;
     height: 24px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-
 }
 
 .close-button:hover, .close-button:focus{
@@ -690,10 +740,70 @@ border-radius: 2px;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-
 }
 
 .backdrop.is-hidden .modal{
-    transform: translate(-50%, -50%) perspective(600px) rotateX(90deg);
+    transform: translate(-50%, -50%) 
+    perspective(600px) rotateX(90deg);
+   
+}
+
+.modal-title{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+  
+    text-align: center;
+    letter-spacing: 0.02em;
+   
+    color: #2E2F42;
+
+    margin-bottom: 16px;
+
+}
+
+.modal-input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+}
+.modal-label,
+.modal-textarea::placeholder{
+    color: #8E8F99;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
     
+}
+.modal-textarea{
+    width: 100%;
+    height: 120px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    resize: none;
+}
+
+.modal-textarea::placeholder{
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.send-button{
+
+    width: 169px;
+    height: 56px;
+    color: #FFFFFF;
+    background: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 0;
+
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
 }
