@@ -280,6 +280,8 @@ border-radius: 2px;
     background-color: transparent;
 
     padding: 8px 16px;
+
+    color: #FFFFFF;
 }
 
 .footer-input-email::placeholder{
@@ -696,7 +698,7 @@ border-radius: 2px;
     transform: translate( -50%, -50%) rotateX(0) ;
   
     width: 408px;
-    min-height: 576px;
+    height: 584px;
     padding: 72px 24px 24px;
     transition: transform var(--transition);
 
@@ -762,6 +764,16 @@ border-radius: 2px;
     margin-bottom: 16px;
 
 }
+
+.input-box-wrapp{
+    margin-bottom: 8px;
+}
+
+.textarea-box-wrapp{
+    display: block;
+    margin-bottom: 16px;
+}
+
 .input-icon-wrapp{
     position: relative;
 }
@@ -771,6 +783,7 @@ border-radius: 2px;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
+    transition: fill var(--transition);
 }
 
 .modal-input{
@@ -780,11 +793,19 @@ border-radius: 2px;
     outline: transparent;
     border-radius: 4px;
     padding-left: 38px;
+
+    transition: border-color var(--transition);
 }
+
+.modal-label{
+    display: block;
+    margin-bottom: 4px;
+}
+
+
 .modal-label,
 .modal-textarea::placeholder{
     color: #8E8F99;
-    margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -798,10 +819,10 @@ border-radius: 2px;
 }
 
 .modal-textarea{
+    outline: transparent;
     width: 100%;
     height: 120px;
     padding: 8px 16px;
-    margin-bottom: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     resize: none;
@@ -812,7 +833,8 @@ border-radius: 2px;
 }
 
 .send-button{
-     width: 169px;
+    display: block;
+    width: 169px;
     height: 56px;
     color: #FFFFFF;
     background: #4D5AE5;
@@ -821,8 +843,8 @@ border-radius: 2px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 0;
 
-    margin-top: 24px;
-    margin-left: 96px;
+    margin-left:auto;
+    margin-right: auto;
 }
 
 .check-text{
@@ -847,6 +869,9 @@ border-radius: 2px;
     
     background-color: #404BBF;
     border: none;
-    border-radius: 2px;
     fill: #F4F4FD;
+}
+
+.checkbox-box-wrapp{
+    margin-bottom: 24px;
 }
