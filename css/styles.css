@@ -804,6 +804,7 @@ border-radius: 2px;
 
 
 .modal-label,
+.modal-textarea,
 .modal-textarea::placeholder{
     color: #8E8F99;
     font-weight: 400;
@@ -826,6 +827,11 @@ border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     resize: none;
+
+    transition: border-color var(--transition);
+}
+.modal-textarea:focus {
+    border-color: #4D5AE5;
 }
 
 .modal-textarea::placeholder{
@@ -851,6 +857,11 @@ border-radius: 2px;
     display: flex;
     align-items: center;
 }
+
+.link-checkbox{
+color:#4D5AE5;
+}
+
 
 .click{
     display: flex;
